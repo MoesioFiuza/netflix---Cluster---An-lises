@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.preprocessing import StandardScaler
 
-caminho_arquivo = r'C:\Users\maest\OneDrive\Área de Trabalho\estudos\netflix_full.csv'
+caminho_arquivo = r'cole aqui o caminho do arquivo csv'
 df = pd.read_csv(caminho_arquivo)
 
 df['time'] = df['time'].str.extract('(\d+)').astype(float)
